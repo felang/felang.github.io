@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Javascript,">
 
 
 
@@ -77,17 +77,18 @@
 
 
 
-<meta name="description" content="随便写写">
-<meta name="keywords" content="personal blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="felang">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta name="description" content="promise 简易实现实现 promise 主要需要实现 promise.then 函数   class Promise { constructor(fn) {     var self = this     this.doneList = [];        //成功回调函数队列     this.failList = [];        //失败回调函数队列     this.statu">
+<meta name="keywords" content="Javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Promise">
+<meta property="og:url" content="http://yoursite.com/2018/03/30/promise-使用/index.html">
 <meta property="og:site_name" content="felang">
-<meta property="og:description" content="随便写写">
+<meta property="og:description" content="promise 简易实现实现 promise 主要需要实现 promise.then 函数   class Promise { constructor(fn) {     var self = this     this.doneList = [];        //成功回调函数队列     this.failList = [];        //失败回调函数队列     this.statu">
 <meta property="og:locale" content="zh_cn">
+<meta property="og:updated_time" content="2019-05-27T12:21:10.541Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="felang">
-<meta name="twitter:description" content="随便写写">
+<meta name="twitter:title" content="Promise">
+<meta name="twitter:description" content="promise 简易实现实现 promise 主要需要实现 promise.then 函数   class Promise { constructor(fn) {     var self = this     this.doneList = [];        //成功回调函数队列     this.failList = [];        //失败回调函数队列     this.statu">
 
 
 
@@ -117,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/30/promise-使用/">
 
 
 
 
 
-  <title>Archive | felang</title>
+  <title>Promise | felang</title>
   
 
 
@@ -142,7 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,72 +267,261 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 4 posts in total. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/promise-使用/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="felang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="felang">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/27/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Promise</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-27T20:38:42+08:00" content="2019-05-27">
-          05-27
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-30T16:16:31+08:00">
+                2018-03-30
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <h2 id="promise-简易实现"><a href="#promise-简易实现" class="headerlink" title="promise 简易实现"></a>promise 简易实现</h2><p>实现 promise 主要需要实现 promise.then 函数  </p>
+<pre><code>class Promise {
+constructor(fn) {
+    var self = this
+    this.doneList = [];        //成功回调函数队列
+    this.failList = [];        //失败回调函数队列
+    this.status = &apos;PENDING&apos;;   //状态
+    this.value = null;
+    this.error = null;
+    function resolve(value){
+        setTimeout(function(){
+
+            self.status = &apos;FULFILLED&apos;;
+            console.log(&apos;value&apos;, self.status)
+            self.value = value;
+            self.doneList.forEach(function(done){
+                self.value = done(self.value);   //将计算结果依次传递下去
+            });
+        });
+    }
+
+    //Promise改变状态，执行其失败回调函数队列
+    function reject(error){
+        setTimeout(function(){
+            self.status = &apos;REJECTED&apos;;
+            self.error = error;
+            self.failList.forEach(function(fail){
+                self.error = fail(self.error);   //将错误处理结果依次传递下去
+            });
+        });
+    }
+    fn(resolve,reject);
+}
+
+then(done,fail){
+    var self = this;
+    return new Promise(function(resolve,reject){
+        //对then中的回调函数进行包装，并执行resolve
+        function handle(value){
+            //成功和错误处理函数必须是函数才调用，否则直接返回上一个值
+            var res = typeof done === &apos;function&apos; &amp;&amp; done(value) || value;
+            console.log(&apos;res&apos;, res)
+            //如果返回一个Promise对象，则调用其then方法，等待获取其中的返回值
+            if(res &amp;&amp; typeof res[&apos;then&apos;] === &apos;function&apos;){
+                res.then(function(value){
+                    //调用resolve时，会执行其成功回调函数列表
+                    resolve(value);
+                });
+            } else {
+                resolve(res);
+            }
+        }
+
+        function errback(error){
+            error = typeof fail === &apos;function&apos; &amp;&amp; fail(error) || error;
+            reject(error);
+        }
+
+        if(self.status === &apos;PENDING&apos;){
+            self.doneList.push(handle);
+            self.failList.push(errback);
+        } else if(self.status === &apos;FULFILLED&apos;){
+            //已完成后调用then则直接传入计算结果
+            handle(self.value);
+        } else if(self.status === &apos;REJECTED&apos;){
+            //已完成后调用则直接传入异常
+            errback(self.error);
+        }
+        // console.log(&apos;doneList&apos;, self.doneList.length, self)
+    });
+}
+//
+
+resolve(arg){
+    return new Promise(function(resolve,reject){
+        resolve(arg);
+    });
+}
+
+reject(arg){
+    return new Promise(function(resolve,reject){
+        reject(arg);
+    });
+}
+
+catch(fail){
+    return this.then(undefined,fail);
+}
+</code></pre><p>}</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/23/node-js-实现反向代理服务器/" rel="next" title="node.js 实现反向代理服务器">
+                <i class="fa fa-chevron-left"></i> node.js 实现反向代理服务器
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/09/javascript-中-this-的使用/" rel="prev" title="javascript 中 this 的使用">
+                javascript 中 this 的使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -339,6 +529,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -359,8 +553,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -430,6 +633,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#promise-简易实现"><span class="nav-number">1.</span> <span class="nav-text">promise 简易实现</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -570,6 +789,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

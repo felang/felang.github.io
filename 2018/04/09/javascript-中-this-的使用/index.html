@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Javascript,">
 
 
 
@@ -77,17 +77,18 @@
 
 
 
-<meta name="description" content="随便写写">
-<meta name="keywords" content="personal blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="felang">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="绑定规则默认绑定即独立函数调用时 this 的绑定对象   function foo() {     console.log( this.a ) } var a = a; foo();  // 2   默认绑定中 this 指向全局对象, 所以这里调用 foo() 函数会将 this.a 解析为全局变量 a.   隐式绑定当函数调用具有上下文对象时, 或函数属于某个对象或被包含时, this 指向">
+<meta name="keywords" content="Javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript 中 this 的使用">
+<meta property="og:url" content="http://yoursite.com/2018/04/09/javascript-中-this-的使用/index.html">
 <meta property="og:site_name" content="felang">
-<meta property="og:description" content="随便写写">
+<meta property="og:description" content="绑定规则默认绑定即独立函数调用时 this 的绑定对象   function foo() {     console.log( this.a ) } var a = a; foo();  // 2   默认绑定中 this 指向全局对象, 所以这里调用 foo() 函数会将 this.a 解析为全局变量 a.   隐式绑定当函数调用具有上下文对象时, 或函数属于某个对象或被包含时, this 指向">
 <meta property="og:locale" content="zh_cn">
+<meta property="og:updated_time" content="2019-05-27T12:21:01.230Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="felang">
-<meta name="twitter:description" content="随便写写">
+<meta name="twitter:title" content="javascript 中 this 的使用">
+<meta name="twitter:description" content="绑定规则默认绑定即独立函数调用时 this 的绑定对象   function foo() {     console.log( this.a ) } var a = a; foo();  // 2   默认绑定中 this 指向全局对象, 所以这里调用 foo() 函数会将 this.a 解析为全局变量 a.   隐式绑定当函数调用具有上下文对象时, 或函数属于某个对象或被包含时, this 指向">
 
 
 
@@ -117,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/04/09/javascript-中-this-的使用/">
 
 
 
 
 
-  <title>felang</title>
+  <title>javascript 中 this 的使用 | felang</title>
   
 
 
@@ -142,8 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,157 +266,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/27/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="felang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="felang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/27/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-27T20:38:42+08:00">
-                2019-05-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Diary/" itemprop="url" rel="index">
-                    <span itemprop="name">Diary</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/05/27/hello-world/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -446,9 +298,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/09/javascript-中-this-的使用/" itemprop="url">javascript 中 this 的使用</a></h1>
+          <h1 class="post-title" itemprop="name headline">javascript 中 this 的使用</h1>
         
 
         <div class="post-meta">
@@ -520,24 +370,73 @@
       
 
       
-        
-          
-          绑定规则默认绑定即独立函数调用时 this 的绑定对象  
-function foo() {
+        <h2 id="绑定规则"><a href="#绑定规则" class="headerlink" title="绑定规则"></a>绑定规则</h2><h3 id="默认绑定"><a href="#默认绑定" class="headerlink" title="默认绑定"></a>默认绑定</h3><p>即独立函数调用时 this 的绑定对象  </p>
+<pre><code>function foo() {
     console.log( this.a )
 }
 var a = a;
 foo();  // 2  
-默认绑定中 this 指向全局对象, 所以这里调用 foo() 函数会将 this.a 解析为全局
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/09/javascript-中-this-的使用/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+</code></pre><p>默认绑定中 this 指向全局对象, 所以这里调用 foo() 函数会将 this.a 解析为全局变量 a.  </p>
+<h3 id="隐式绑定"><a href="#隐式绑定" class="headerlink" title="隐式绑定"></a>隐式绑定</h3><p>当函数调用具有上下文对象时, 或函数属于某个对象或被包含时, this 指向这个函数的上下午对象.</p>
+<pre><code>function foo() {
+    console.log( this.a )
+}
+var obj = {
+    a: 2,
+    foo: foo,
+}
+obj.foo();  // 2  
+</code></pre><p>这里 this 指向了 obj 对象.  </p>
+<p>  对象属性引用链中只有最后一层会影响调用位置, 例如:</p>
+<pre><code>function foo() {
+    console.log( this.a )
+}
+
+var obj1 = {
+    a: 2,
+    foo: foo,
+}
+
+var obj2 = {
+    a: 15,
+    obj1: obj1,
+}
+
+obj2.obj1.foo();  // 2  
+</code></pre><h4 id="隐式绑定丢失"><a href="#隐式绑定丢失" class="headerlink" title="隐式绑定丢失"></a>隐式绑定丢失</h4><p>隐式绑定的函数丢失绑定对象时会使用默认绑定将 this 绑定到全局对象中. 例:  </p>
+<pre><code>function foo() {
+    console.log( this.a )
+}
+
+var obj1 = {
+    a: 2,
+    foo: foo,
+}
+
+var bar = obj.foo
+var a = &quot;hello world&quot;
+bar() // &quot;hello world&quot;  
+</code></pre><p>此时 bar 是 obj.foo 的一个引用, 在全局环境中调用 bar 时没有任何修饰, 所以使用了默认绑定. 同样的情形发生在当把函数作为参数传递时(回调函数)时.  </p>
+<h3 id="显示绑定"><a href="#显示绑定" class="headerlink" title="显示绑定"></a>显示绑定</h3><p>使用 call, apply 或者 bind 方法可以自行指定函数调用时的上下文.  </p>
+<pre><code>function foo() {
+    console.log( this.a )
+}
+
+var obj1 = {
+    a: 2,
+}
+
+foo.call(obj1) // 2  
+</code></pre><p>tips:<br>call 和 apply 的区别, 调用时传递参数的方式不同, apply 调用时传递的是参数数组  </p>
+<h3 id="new-绑定"><a href="#new-绑定" class="headerlink" title="new 绑定"></a>new 绑定</h3><p> new 是调用对象构造函数时使用的关键字, 使用 new 来调用函数时, 会创建一个全新的对象.这个新对象会绑定到调用的构造函数中的 this 上.  </p>
+<pre><code> function foo(a) {
+    this.a = a
+}
+
+var bar = new foo(2)
+console.log(bar.a) // 2
+</code></pre><h3 id="四种规则的优先级"><a href="#四种规则的优先级" class="headerlink" title="四种规则的优先级"></a>四种规则的优先级</h3><p> new &gt; 显示绑定 &gt; 隐式绑定 &gt; 默认绑定</p>
+
       
     </div>
     
@@ -552,318 +451,40 @@ foo();  // 2
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/promise-使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="felang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="felang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/30/promise-使用/" itemprop="url">Promise</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-30T16:16:31+08:00">
-                2018-03-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">Javascript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          promise 简易实现实现 promise 主要需要实现 promise.then 函数  
-class Promise {
-constructor(fn) {
-    var self = this
-    this.doneList = [];        //成功回调函数队列
-    th
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/30/promise-使用/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/30/promise-使用/" rel="next" title="Promise">
+                <i class="fa fa-chevron-left"></i> Promise
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/23/node-js-实现反向代理服务器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="felang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="felang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/23/node-js-实现反向代理服务器/" itemprop="url">node.js 实现反向代理服务器</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-23T17:35:06+08:00">
-                2018-03-23
-              </time>
+              <a href="/2019/05/27/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">Javascript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          反向代理一般使用 nginx 实现反向代理功能, 要使用 node 实现反向代理需要使用 node 自带的原生模块 http 来实现
-const http = require(&apos;http&apos;)
-const assert = require(&apos;assert&apos;)
-c
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/23/node-js-实现反向代理服务器/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -873,10 +494,11 @@ c
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -884,6 +506,10 @@ c
 
 
           
+
+  
+
+
 
         </div>
         
@@ -904,8 +530,17 @@ c
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -975,6 +610,22 @@ c
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定规则"><span class="nav-number">1.</span> <span class="nav-text">绑定规则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#默认绑定"><span class="nav-number">1.1.</span> <span class="nav-text">默认绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐式绑定"><span class="nav-number">1.2.</span> <span class="nav-text">隐式绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#隐式绑定丢失"><span class="nav-number">1.2.1.</span> <span class="nav-text">隐式绑定丢失</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示绑定"><span class="nav-number">1.3.</span> <span class="nav-text">显示绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new-绑定"><span class="nav-number">1.4.</span> <span class="nav-text">new 绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四种规则的优先级"><span class="nav-number">1.5.</span> <span class="nav-text">四种规则的优先级</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1115,6 +766,10 @@ c
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
